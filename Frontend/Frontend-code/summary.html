@@ -125,7 +125,8 @@
       const file = new File([summaryText], filename, { type: "text/plain" });
       const formData = new FormData();
       formData.append("file", file);
-
+            // change here frontend-public-ip:5000/upload
+      // if ypu are using loadblancer for frontend s3 just paste that url
       fetch("http://s3copy-446514415.ap-northeast-1.elb.amazonaws.com/upload", {
         method: "POST",
         body: formData
@@ -191,3 +192,4 @@
   </script>
 </body>
 </html>
+
