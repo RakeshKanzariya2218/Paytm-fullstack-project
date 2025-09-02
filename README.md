@@ -21,6 +21,7 @@ This repository contains both backend and frontend code for the Vardhan project.
 - create backend server and add i am role access to the s3 bucket
 1. Clone the repository to your backend server.
 ```
+sudo yum install git -y
 git clone https://github.com/CloudTechDevOps/Paytm-fullstack-project.git
 ```
 switch to backend
@@ -56,6 +57,7 @@ nohup python3 rds.py > rds.log 2>&1 &
 
 1. Clone the repository to your frontend server.
 ```
+sudo yum install git -y
 git clone https://github.com/CloudTechDevOps/Paytm-fullstack-project.git
 ```
 
