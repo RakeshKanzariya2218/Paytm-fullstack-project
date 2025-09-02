@@ -1,6 +1,6 @@
 # paytm Project
 
-This repository contains both backend and frontend code for the Vardhan project.
+This repository contains both backend and frontend code for the Paytm project.
 
 ## Structure
 
