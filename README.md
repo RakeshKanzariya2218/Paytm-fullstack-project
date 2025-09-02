@@ -85,7 +85,7 @@ nohup python3 backends3.py > backend.log 2>&1 &
 ```
 8. If you want to create loadbalncer for this s3 just create with 5000 port other wise ignore for pulic deployment
 
-- 9. switch to frontend-code
+9. switch to frontend-code
 ```
 cd Frontend-code
 ```
@@ -104,7 +104,7 @@ cd Frontend-code
         body: formData
       })
 ```
-- 12. install the dependyces on frontend server
+12. install the dependyces on frontend server
 ```
 sudo yum update -y
 sudo yum install httpd -y
