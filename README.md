@@ -79,7 +79,25 @@ python3 --version pip3 --version
 pip install -r requirements.txt
 ```
 6. change the s3 bucket name on **backends3.py**  file if you are using private s3 add the bucket policy.Policy is there on **s3backendpolicy.txt**
-7. Finally run the **backends3.py**
+```  Bucket policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::accountnumber:role/rolename"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::bucketname",
+                "arn:aws:s3:::bucketname/*"
+            ]
+        }
+    ]
+}
+```
+8. Finally run the **backends3.py**
 ```
 nohup python3 backends3.py > backend.log 2>&1 &
 ```
