@@ -26,7 +26,7 @@ git clone https://github.com/CloudTechDevOps/Paytm-fullstack-project.git
 ```
 switch to backend
 ``` 
- cd Backend
+ cd Paytm-fullstack-project/Backend
 ```
 2. install dependencys 
 ```
@@ -63,7 +63,7 @@ git clone https://github.com/CloudTechDevOps/Paytm-fullstack-project.git
 
 2. switch to frontend
 ``` 
- cd Frontend
+ cd Paytm-fullstack-project/Frontend
  ```
 3. siwtch to frontend s3
 ```
