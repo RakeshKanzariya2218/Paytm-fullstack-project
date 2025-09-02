@@ -108,6 +108,7 @@ nohup python3 backends3.py > backend.log 2>&1 &
 
 9. switch to frontend-code
 ```
+cd ..
 cd Frontend-code
 ```
 10. change the backend url on following files **signup.html** **signuppscannerhtml**  if your are using loadbalncer for backend paste loadbalncer url otherwise paste public ip:5000   like this change any one 
