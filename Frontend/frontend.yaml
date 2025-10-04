@@ -16,7 +16,7 @@ spec:
     spec: 
       containers: 
         - name: frontend-containers
-          image: "132866222051.dkr.ecr.us-east-1.amazonaws.com/frontend-image@sha256:39ec1b63834d5f5dc5ca0cffe45456e07ebe4c248442b455f2341fae1aba3ae6"
+          image: "132866222051.dkr.ecr.us-east-1.amazonaws.com/frontend-image:latest"
           ports: 
             - name: python
               containerPort: 5000
