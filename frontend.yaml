@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: frontend-deployment
+  labels: 
+    app: frontend
+spec: 
+  replicas: 2
+  selector: 
+    matchLabels: 
+      app: frontend
+  template: 
+    metadata: 
+      labels: 
+        app: frontend
+    spec: 
+      containers: 
+        - name: frontend-containers
+          image: "132866222051.dkr.ecr.us-east-1.amazonaws.com/frontend-image@sha256:76838b73b16c19c76469c5835ebb5d6ebe783efa99cf596d9a74c28b9dac34d7"
+          ports: 
+            - name: python
+              containerPort: 5000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: frontend
+  ports: 
+    - port: 80
+      targetPort: 80
+      protocol: TCP
