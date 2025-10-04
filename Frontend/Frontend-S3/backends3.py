@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Your bucket name
-BUCKET_NAME = "s3copyofthedatapayment"    # change the bucket name 
+BUCKET_NAME = "rkanzariya.info"    # change the bucket name 
 
 # Initialize boto3 S3 client (it will use IAM role attached to EC2)
 s3 = boto3.client("s3")
@@ -54,4 +54,5 @@ def copy_file():
 if __name__ == "__main__":
     # Runs on port 5000, accessible via your LB
     app.run(host="0.0.0.0", port=5000)
+
 
