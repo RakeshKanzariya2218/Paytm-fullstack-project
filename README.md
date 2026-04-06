@@ -119,7 +119,7 @@ cd Frontend-code
 ``` 
 11. then change the s3 url on **summary.html** file either loadbalncer or public:500 port 
 ```
-      // change here frontend-public-ip:5000/upload
+      // change here backend-public-ip:5000/upload
       // if ypu are using loadblancer for frontend s3 just paste that url
       fetch("http://backend load balancer or public ip of backend/upload", {
         method: "POST",
