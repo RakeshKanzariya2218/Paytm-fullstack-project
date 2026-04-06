@@ -139,7 +139,30 @@ sudo cp -r * /var/www/html
 ```
 14.  access the application with public ip or loadblancer url
 15. sign up and login the appliaction
+-------------------------------------------------------------
+Step 1: Correct folder me ja
+cd /var/www/html/Frontend-code
+ls
 
+👉 Yaha tu dekhega:
+
+index.html  main.html  signup.html  summary.html ...
+🔹 Step 2: Sab files root me copy kar
+sudo cp -r /var/www/html/Frontend-code/* /var/www/html/
+🔹 Step 3: Check kar
+cd /var/www/html
+ls
+
+👉 Ab yaha hona chahiye:
+
+index.html
+signup.html
+summary.html
+style.css
+...
+🔹 Step 4: Apache restart
+sudo systemctl restart httpd
+---------------------------------------------------------------------------------
 
 ## Usage
 
