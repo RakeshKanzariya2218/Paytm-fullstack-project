@@ -121,7 +121,7 @@ cd Frontend-code
 ```
       // change here frontend-public-ip:5000/upload
       // if ypu are using loadblancer for frontend s3 just paste that url
-      fetch("http://s3copy-446514415.ap-northeast-1.elb.amazonaws.com/upload", {
+      fetch("http://backend load balancer or public ip of backend/upload", {
         method: "POST",
         body: formData
       })
